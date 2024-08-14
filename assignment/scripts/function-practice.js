@@ -18,18 +18,19 @@ function helloName(Samuel) {
   return `Hello, ${Samuel}!`;
 }
 // Remember to call the function to test
-
+console.log('Test - should say "Hello, Samuel!"', helloName('Samuel'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
-
+console.log('Test - should be 7 (3 + 4)', addNumbers(3, 4));
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(a, b, c) {
   return a * b * c;
 }
+console.log('Test - should be 24 (2 * 3 * 4)', multiplyThree(2, 3, 4));
 
 
 // 5. Function that will return true if a number is positive, 
@@ -37,6 +38,8 @@ function multiplyThree(a, b, c) {
 function isPositive(number) {
   return number > 0;
 }
+console.log('Test - should be true (5 is positive)', isPositive(5));
+console.log('Test - should be false (-3 is not positive)', isPositive(-3));
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -47,7 +50,8 @@ function isPositive(number) {
 function getLast(array) {
   return array[array.length - 1];
 }
-
+console.log('Test - should be 3 (last item in [1, 2, 3])', getLast([1, 2, 3]));
+console.log('Test - should be undefined (empty array)', getLast([]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
@@ -59,6 +63,8 @@ function find(value, array) {
   }
   return false;
 }
+console.log('Test - should be true (2 is in [1, 2, 3])', find(2, [1, 2, 3]));
+console.log('Test - should be false (4 is not in [1, 2, 3])', find(4, [1, 2, 3]));
 
 // ----------------------
 // Stretch Goals
